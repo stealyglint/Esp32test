@@ -15,6 +15,6 @@ void loop() {
   Serial.printf("Hello World!\n");
   Serial.printf("%i\n",a);
   a = a + 1;
-	delay(3000);
+	delay(2000);
 
 }
