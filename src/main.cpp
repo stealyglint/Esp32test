@@ -18,7 +18,7 @@ void loop() {
   Serial.printf("Hello World!\n");
   Serial.printf("%i\n",a);
 	esp_chip_info(&chipInfo);
-	Serial.printf("Num of Cores: %d,\n WiFi%s%s\n", chipInfo.cores,
+	Serial.printf("Num of Cores: %d,\nChip Features: WiFi%s%s\n", chipInfo.cores,
 								(chipInfo.features & CHIP_FEATURE_BT) ? "/BT" : "",
 							(chipInfo.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
   a = a + 1;
